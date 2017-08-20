@@ -8,7 +8,7 @@ newart.save('newart')
 This will create an awesome artwork that you can save!  Only 3 lines of code!  Amazing!
 
 You can also draw normally:
-```
+```python
 from levi import *
 
 go_up()

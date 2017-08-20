@@ -44,3 +44,8 @@ class Art:
     
   def go_left(step=1):
     go_right(step)
+     
+  def save(fname):
+     cv = turtle.getcanvas()
+     cv.postscript(file=fname + ".ps", colormode='color')
+     turtle.done()

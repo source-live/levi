@@ -27,8 +27,12 @@ def levi_draw(step_size,step_number):
         move_in_a_direction = move_dict[random.randint(1, 4)]
         move_in_a_direction(step_size)
         
-        
-        
+def save(fname):
+     cv = turtle.getcanvas()
+     cv.postscript(file=fname + ".ps", colormode='color')
+     turtle.done()        
+
+          
 class Art:
   def __init__(step_size=1,step_number=100):
     levi_draw(step_size,step_number)
